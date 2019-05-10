@@ -11,9 +11,9 @@ from TwitterAPI import TwitterAPI, TwitterPager
 file = csv.writer(open("die-hard-tweets-no-retweets.csv", "w+", encoding="utf-8"))
 
 # Initialize Twitter API
-api = TwitterAPI('HzFVEIJWUyWk344lqLe6nfhtp', 'Fp31XN6a0rR4eV5d6Nce8IADBYRqms62nFiqO4d7txh2jP2SHW', 
-	'26332823-87G6TbYRE7KFSxf7oxXZ34k8U0vO0Fn4a01qJBhKU', 
-	'P3eJbyyrqUs9xNKPYcYJDdb8gEJ2vTS59e7VbEGgi1tDE')
+api = TwitterAPI('*key*', '*secret key*', 
+	'*access key*', 
+	'*secret access key')
 
 r = TwitterPager(api, 'search/tweets', {'q': 'Die Hard Christmas-filter:retweets', 'tweet_mode': 'extended'})
 
